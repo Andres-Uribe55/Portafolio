@@ -16,7 +16,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .proyecto {
     background: #316dc7;
@@ -31,6 +31,7 @@ body {
     align-items: center;
     text-align: center;
     color: black;
+    justify-content: space-between;
 
 }
 .proyecto a{
@@ -161,4 +162,14 @@ button:hover {
 .contacto input{
     width: 300px;
     
+}
+
+footer{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    border-radius: 10px;
+
 }
