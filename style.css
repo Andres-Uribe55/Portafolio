@@ -133,21 +133,19 @@ button:hover {
 }
 
 .contactos {
-  margin-top: 100px;
-  padding: 0 20px;
+  margin: 100px auto 50px auto; /* margen arriba y centrado horizontalmente */
+  padding: 0 20px;              /* espacio horizontal en móviles */
   display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
   justify-content: center;
+  align-items: center;
 }
-
 
 .contacto {
   background: #316dc7;
   padding: 30px;
   border-radius: 10px;
   width: 100%;
-  max-width: 600px;
+  max-width: 600px; /* no más de 600px para que no sea muy ancho */
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
@@ -159,13 +157,16 @@ button:hover {
 
 .contacto h2 {
   color: black;
+  margin-bottom: 20px;
 }
 
 .contacto input,
 .contacto textarea {
   width: 100%;
   max-width: 500px;
+  box-sizing: border-box;
 }
+
 
 
 footer{
