@@ -1,132 +1,110 @@
 <!DOCTYPE html>
-<!-- Declaración del tipo de documento. Indica que este archivo está escrito en HTML5 -->
 <html lang="es">
-<!-- Elemento raíz del documento. El atributo lang="es" indica que el idioma principal es español -->
 <head>
-    <!-- Contiene metadatos e información del documento -->
-    <meta charset="UTF-8">
-    <!-- Define la codificación de caracteres para que se muestren correctamente letras con tilde, ñ, etc. -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Permite que el sitio sea adaptable a dispositivos móviles (diseño responsive) -->
-    <title>My Personal Portfolio</title>
-    <!-- Título que aparece en la pestaña del navegador -->
-    <meta name="description" content="Personal portfolio of Omar Andres Uribe Vega as a Riwi developer.">
-    <!-- Breve descripción del sitio, útil para buscadores (SEO) -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Vincula el archivo CSS externo para aplicar estilos al sitio -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio</title>
+  <meta name="description" content="Personal portfolio of Omar Andres Uribe Vega as a Riwi developer.">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <div class="main-content">
     <main>
-        <!-- Contenedor principal del contenido visible -->
-        <h1>Omar Andres Uribe Vega - Riwi Developer</h1>
-        <!-- Título principal de la página -->
+      <h1>Omar Andres Uribe Vega - Riwi Developer</h1>
 
-        <section>
-            <!-- Sección de presentación del autor -->
-            <h2>About Me</h2>
-            <p>
-                Hello, I am Omar Andres Uribe Vega and I'm a student from Riwi.
-                I love learning new things like software development and constantly improving my skills.
-                I don't have experience in software development yet, but my goal is to become a developer next year.
-            </p>
-        </section>
+      <!-- About Section -->
+      <section>
+        <h2>About Me</h2>
+        <p>
+          Hello, I am Omar Andres Uribe Vega and I'm a student from Riwi.
+          I love learning new things like software development and constantly improving my skills.
+          I don't have experience in software development yet, but my goal is to become a developer next year.
+        </p>
+      </section>
 
-        <div class="profile-section">
-            <!-- Sección que muestra una imagen de perfil y habilidades -->
-            <img src="me.jpg" alt="Omar's photo" width="300">
-            <!-- Imagen del autor. El atributo alt da un texto alternativo si la imagen no carga -->
-            <h3>Skills:</h3>
-            <ul>
-                <!-- Lista de habilidades -->
-                <li>Python - Junior</li>
-                <li>Learning HTML</li>
-            </ul>
+      <!-- Profile & Skills -->
+      <div class="profile-section">
+        <img src="me.jpg" alt="Omar's photo" width="300">
+        <h3>Skills:</h3>
+        <ul class="skills">
+          <li>Python - Junior</li>
+          <li>Learning HTML</li>
+        </ul>
+      </div>
+
+      <!-- Projects Section -->
+      <section>
+        <h2>Projects</h2>
+        <div class="proyectos">
+          <div class="proyecto">
+            <h3>Project 1: Register</h3>
+            <p>This is my first project where I built a login system using HTML and CSS.</p>
+            <a href="https://andres-uribe55.github.io/login/" target="_blank">Enter</a>
+          </div>
+
+          <div class="proyecto">
+            <h3>Project 2: Semantic Web</h3>
+            <p>This is my second project where I built a website using HTML and CSS.</p>
+            <a href="https://andres-uribe55.github.io/semantico/" target="_blank">Enter</a>
+          </div>
+
+          <div class="proyecto">
+            <h3>Project 3: Sound_Clips</h3>
+            <p>This is my third project where I built a website mp3 using HTML and CSS.</p>
+            <a href="https://andres-uribe55.github.io/Sound_clip/" target="_blank">Enter</a>
+          </div>
+
+          <div class="proyecto">
+            <h3>Project 4: Restaurant Menu</h3>
+            <p>This is my fourth project where I built a restaurant menu using HTML and CSS.</p>
+            <a href="https://andres-uribe55.github.io/Menu_Restaurant/" target="_blank">Enter</a>
+          </div>
+
+          <div class="proyecto">
+            <h3>Project 5: Carousel</h3>
+            <p>This is my fifth project where I built a carousel using HTML and CSS.</p>
+            <a href="https://andres-uribe55.github.io/Carrusel/" target="_blank">Enter</a>
+          </div>
+
+          <div class="proyecto">
+            <h3>Project 6: Festival Website</h3>
+            <p>This is my sixth project where we built a festival website using HTML and CSS, as a team.</p>
+            <a href="https://jmoralesnunez.github.io/Web_feria/index.html" target="_blank">Enter</a>
+          </div>
         </div>
+      </section>
 
-        <section>
-            <!-- Sección de proyectos realizados -->
-            <h2>Projects</h2>
-            <div class="proyectos">
-                <div class="proyecto">
-                    <!-- Primer proyecto -->
-                    <h3>Project 1: Register</h3>
-                    <p>This is my first project where I built a login system using HTML and CSS.</p>
-                    <a href="https://andres-uribe55.github.io/login/" target="_blank">Enter</a>
-                    <!-- Enlace al proyecto. Se abre en una nueva pestaña -->
-                </div>
+      <!-- Contact Section -->
+      <section class="contactos">
+        <article class="contacto">
+          <h2>Contact Me</h2>
+          <form action="#" method="post">
+            <label for="nombre">Name:</label>
+            <input type="text" id="nombre" name="nombre" required>
 
-                <div class="proyecto">
-                    <!-- Segundo proyecto -->
-                    <h3>Project 2: Semantic Web</h3>
-                    <p>This is my second project where I built a website using HTML and CSS.</p>
-                    <a href="https://andres-uribe55.github.io/semantico/" target="_blank">Enter</a>
-                    <!-- Enlace al segundo proyecto -->
-                </div>
-                <div class="proyecto">
-                    <!-- Tercer proyecto -->
-                    <h3>Project 3: Sound_Clips</h3>
-                    <p>This is my third project where I built a website mp3 using HTML and CSS.</p>
-                    <a href="https://andres-uribe55.github.io/Sound_clip/" target="_blank">Enter</a>
-                    <!-- Enlace al segundo proyecto -->
-                </div>
-                <div class="proyecto">
-                    <!-- Cuarto proyecto -->
-                    <h3>Project 4: Sound_Clips</h3>
-                    <p>This is my fourth project where I built a restaurant menu using HTML and CSS.</p>
-                    <a href="https://andres-uribe55.github.io/Menu_Restaurant/" target="_blank">Enter</a>
-                    <!-- Enlace al segundo proyecto -->
-                </div>
-                <div class="proyecto">
-                    <!-- Cuarto proyecto -->
-                    <h3>Project 5: Carrusel</h3>
-                    <p>This is my fiveth project where I built a carrusel using HTML and CSS.</p>
-                    <a href="https://andres-uribe55.github.io/Carrusel/" target="_blank">Enter</a>
-                    <!-- Enlace al segundo proyecto -->
-                </div>
-                <div class="proyecto">
-                    <!-- Sexto proyecto -->
-                    <h3>Project 6: Feria</h3>
-                    <p>This is my sixth project where we built a website Festival using HTML and CSS, with my TEAM .</p>
-                    <a href="https://jmoralesnunez.github.io/Web_feria/index.html" target="_blank">Enter</a>
-                    <!-- Enlace al segundo proyecto -->
-                </div>
-            </div>
-        </section>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
 
-        <section class="contactos">
-            <!-- Sección de contacto -->
-            <article class="contacto">
-                <h2>Contact Me</h2>
-                <form action="#" method="post">
-                    <!-- Formulario para que los visitantes puedan escribir un mensaje -->
-                    <label for="nombre">Name:</label>
-                    <input type="text" id="nombre" name="nombre" required>
+            <label for="asunto">Subject:</label>
+            <input type="text" id="asunto" name="asunto" required>
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+            <label for="mensaje">Message:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                    <label for="asunto">Subject:</label>
-                    <input type="text" id="asunto" name="asunto" required>
+            <button type="submit">Send</button>
+          </form>
+        </article>
 
-                    <label for="mensaje">Message:</label>
-                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                    <button type="submit">Send</button>
-                    <!-- Botón para enviar el formulario -->
-                </form>
-            </article>
-
-            <address class="redes-info">
-                <!-- Información de contacto adicional, como redes sociales -->
-                <p><strong>GitHub:</strong> <a href="https://github.com/Andres-Uribe55" target="_blank">https://github.com/Andres-Uribe55</a></p>
-            </address>
-        </section>
+        <address class="redes-info">
+          <p><strong>GitHub:</strong> <a href="https://github.com/Andres-Uribe55" target="_blank">https://github.com/Andres-Uribe55</a></p>
+        </address>
+      </section>
     </main>
+  </div>
 
-    <footer>
-        <!-- Pie de página con derechos de autor -->
-        <p>&copy; 2025 My Site</p>
-    </footer>
+  <footer>
+    <p>&copy; 2025 My Site</p>
+  </footer>
 </body>
 </html>
