@@ -5,19 +5,34 @@
     box-sizing: border-box;
 }
 
-/* Estilo general del cuerpo */
+/* Altura completa del body para que el footer quede al final */
+html, body {
+    height: 100%;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #316dc7;
     color: #333;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-.proyectos{
+
+/* Contenedor principal */
+.main-content {
+    flex: 1;
+}
+
+/* Sección de proyectos */
+.proyectos {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }
+
 .proyecto {
     background: #316dc7;
     padding: 20px;
@@ -32,9 +47,9 @@ body {
     text-align: center;
     color: black;
     justify-content: space-between;
-
 }
-.proyecto a{
+
+.proyecto a {
     display: inline-block;
     margin-top: 10px;
     background-color: white;
@@ -42,8 +57,6 @@ body {
     padding: 8px 14px;
     border-radius: 25px;
     font-weight: bold;
-
-
 }
 
 a {
@@ -57,9 +70,9 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Secciones con estilo */
+/* Secciones generales */
 section {
-    background-color:#ffffff;
+    background-color: #ffffff;
     padding: 20px;
     margin: 20px auto;
     border-radius: 10px;
@@ -75,7 +88,7 @@ h2 {
     text-align: center;
 }
 
-/* Contenedor de imagen + lista */
+/* Sección de perfil */
 .profile-section {
     display: flex;
     flex-direction: column;
@@ -85,11 +98,10 @@ h2 {
     color: #ffffff;
 }
 
-/* Imagen */
 .profile-section img {
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-    width: 100%; /* Para que se ajuste al contenedor */
+    width: 100%;
     display: block;
 }
 
@@ -100,6 +112,7 @@ h2 {
     list-style-type: disc;
 }
 
+/* Formulario de contacto */
 form {
     display: flex;
     flex-direction: column;
@@ -132,73 +145,79 @@ button:hover {
     background-color: #b0b0b0;
 }
 
+/* Contenedor de contactos */
 .contactos {
-  margin: 100px auto 50px auto; /* margen superior + centrado */
-  padding: 0 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    box-sizing: border-box;
 }
 
+/* Caja de contacto */
 .contacto {
-  background: #316dc7;
-  padding: 30px;
-  border-radius: 10px;
-  width: 100%;
-  max-width: 600px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  color: black;
-  box-sizing: border-box;
+    background: #316dc7;
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: black;
+    box-sizing: border-box;
 }
 
 .contacto h2 {
-  color: black;
-  margin-bottom: 20px;
+    color: black;
+    margin-bottom: 20px;
 }
 
 .contacto input,
 .contacto textarea {
-  width: 100%;
-  max-width: 500px;
-  box-sizing: border-box;
+    width: 100%;
+    max-width: 500px;
+    box-sizing: border-box;
 }
 
+/* Responsividad */
 @media screen and (max-width: 600px) {
-  .contacto {
-    padding: 20px;
-  }
+    .contacto {
+        padding: 20px;
+    }
 
-  .contacto input,
-  .contacto textarea {
-    max-width: 100%;
-  }
+    .contacto input,
+    .contacto textarea {
+        max-width: 100%;
+    }
 
-  footer {
-    margin: 0 10px;
-  }
+    footer {
+        margin: 0 10px;
+    }
 }
 
 @media screen and (max-width: 900px) {
-  .contactos {
-    padding: 0 15px;
-  }
+    .contactos {
+        padding: 0 15px;
+    }
 
-  .contacto {
-    padding: 25px;
-  }
+    .contacto {
+        padding: 25px;
+    }
 }
 
-
-footer{
+/* Pie de página */
+footer {
     text-align: center;
     background-color: white;
     padding: 20px;
-    margin-left: 27.5%;
-    margin-right: 27.5%;
-    border-radius: 10px;
-
+    border-radius: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
 }
