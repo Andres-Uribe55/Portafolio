@@ -133,8 +133,8 @@ button:hover {
 }
 
 .contactos {
-  margin: 100px auto 50px auto; /* margen arriba y centrado horizontalmente */
-  padding: 0 20px;              /* espacio horizontal en móviles */
+  margin: 100px auto 50px auto; /* margen superior + centrado */
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,7 +145,7 @@ button:hover {
   padding: 30px;
   border-radius: 10px;
   width: 100%;
-  max-width: 600px; /* no más de 600px para que no sea muy ancho */
+  max-width: 600px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.3);
   display: flex;
   flex-direction: column;
@@ -167,6 +167,30 @@ button:hover {
   box-sizing: border-box;
 }
 
+@media screen and (max-width: 600px) {
+  .contacto {
+    padding: 20px;
+  }
+
+  .contacto input,
+  .contacto textarea {
+    max-width: 100%;
+  }
+
+  footer {
+    margin: 0 10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .contactos {
+    padding: 0 15px;
+  }
+
+  .contacto {
+    padding: 25px;
+  }
+}
 
 
 footer{
