@@ -1,0 +1,12 @@
+/* Custom Styles for Index Page */
+
+/* Code editor glow effect */
+.code-glow {
+    box-shadow: 0 0 20px rgba(19, 127, 236, 0.15);
+}
+
+/* Navigation blur effect */
+.nav-blur {
+    backdrop-filter: blur(12px);
+    background-color: rgba(11, 14, 20, 0.8);
+}

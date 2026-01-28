@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Detalle del Proyecto: Nebula | DevPortfolio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="css/project_detail.css">
+</head>
+
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white min-h-screen">
+    <div class="relative flex h-auto w-full flex-col group/design-root overflow-x-hidden">
+        <div class="layout-container flex h-full grow flex-col">
+            <header
+                class="flex items-center justify-between whitespace-nowrap border-b border-solid border-slate-200 dark:border-slate-800 px-6 md:px-20 py-4 bg-background-light dark:bg-background-dark sticky top-0 z-50">
+                <div class="flex items-center gap-4">
+                    <div class="size-6 text-primary">
+                        <span class="material-symbols-outlined text-3xl">terminal</span>
+                    </div>
+                    <h2
+                        class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] font-display">
+                        DevPortfolio</h2>
+                </div>
+                <div class="flex flex-1 justify-end gap-8">
+                    <nav class="hidden md:flex items-center gap-9">
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                            href="#">Proyectos</a>
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                            href="#">Sobre mí</a>
+                        <a class="text-slate-600 dark:text-slate-300 hover:text-primary dark:hover:text-primary text-sm font-medium transition-colors"
+                            href="#">Contacto</a>
+                    </nav>
+                    <div class="flex gap-3">
+                        <button
+                            class="flex min-w-[84px] cursor-pointer items-center justify-center rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold tracking-[0.015em] hover:bg-primary/90 transition-all">
+                            <span class="truncate">Currículum</span>
+                        </button>
+                        <button
+                            class="flex items-center justify-center rounded-lg h-10 bg-slate-200 dark:bg-slate-800 text-slate-900 dark:text-white px-3 hover:bg-slate-300 dark:hover:bg-slate-700 transition-all">
+                            <span class="material-symbols-outlined">code</span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+            <section class="w-full max-w-[1200px] mx-auto px-4 md:px-10 pt-6">
+                <div class="@container">
+                    <div class="@[480px]:p-0">
+                        <div class="flex min-h-[520px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 rounded-xl items-start justify-end px-6 pb-12 @[480px]:px-12 relative overflow-hidden group"
+                            style='background-image: linear-gradient(rgba(16, 25, 34, 0.2) 0%, rgba(16, 25, 34, 0.9) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuCxbodVHzP1JgCb-azl3jlvYhQpT2O18G6qs5FsCWnsaH1DzArAWAWtFZsO8cXX6GIFRYn3T6sVjAbE5dPoW6B_gnhjZ6kpBg0cytzKQaYZzTCJyC5Aofos_KPNNTebSrR3OKhiPDSpuy17P8h8K-akkIPbTqCWP2bLS07DqV-CENN-FU74-zDU9c06yxItoEJfFl950dKLRneHxCAlstROxA6YbFtRQ9bMocOThxLNekEX1XyCRz0mjRzmtBzpFro7DWK_HeqPtWHM");'>
+                            <div class="flex flex-col gap-3 text-left max-w-2xl z-10">
+                                <div class="flex gap-2 mb-2">
+                                    <span
+                                        class="px-3 py-1 bg-primary/20 border border-primary/30 text-primary text-xs font-bold uppercase tracking-wider rounded-full">Sistemas
+                                        Distribuidos</span>
+                                    <span
+                                        class="px-3 py-1 bg-emerald-500/20 border border-emerald-500/30 text-emerald-400 text-xs font-bold uppercase tracking-wider rounded-full">Completado</span>
+                                </div>
+                                <h1
+                                    class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-6xl font-display">
+                                    Nebula: Ejecutor de Tareas Distribuido
+                                </h1>
+                                <p
+                                    class="text-slate-300 text-base font-normal leading-relaxed @[480px]:text-xl max-w-xl">
+                                    Un sistema de orquestación de alto rendimiento diseñado para escalar trabajos en
+                                    segundo plano en clústeres de cómputo masivos sin tiempo de inactividad.
+                                </p>
+                            </div>
+                            <div class="flex-wrap gap-4 flex z-10">
+                                <button
+                                    class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold tracking-[0.015em] hover:scale-105 transition-transform">
+                                    <span class="truncate">Ver Demo en Vivo</span>
+                                </button>
+                                <button
+                                    class="flex min-w-[120px] cursor-pointer items-center justify-center rounded-lg h-12 px-6 bg-white/10 backdrop-blur-md border border-white/20 text-white text-base font-bold tracking-[0.015em] hover:bg-white/20 transition-all">
+                                    <span class="truncate">Repositorio GitHub</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <main class="w-full max-w-[1200px] mx-auto px-4 md:px-10 py-12 flex flex-col md:flex-row gap-12">
+                <aside class="w-full md:w-64 flex-shrink-0">
+                    <div class="sticky top-24 flex flex-col gap-6">
+                        <div class="flex flex-col">
+                            <h3 class="text-slate-900 dark:text-white text-lg font-bold font-display">Caso de Estudio
+                            </h3>
+                            <p class="text-slate-500 dark:text-slate-400 text-sm">Análisis Profundo</p>
+                        </div>
+                        <nav class="flex flex-col gap-1">
+                            <a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-primary/10 text-primary border-l-4 border-primary"
+                                href="#challenge">
+                                <span class="material-symbols-outlined">warning</span>
+                                <p class="text-sm font-semibold">El Desafío</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+                                href="#solution">
+                                <span class="material-symbols-outlined">check_circle</span>
+                                <p class="text-sm font-medium">La Solución</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+                                href="#stack">
+                                <span class="material-symbols-outlined">layers</span>
+                                <p class="text-sm font-medium">Stack Tecnológico</p>
+                            </a>
+                            <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-all"
+                                href="#technical">
+                                <span class="material-symbols-outlined">code_blocks</span>
+                                <p class="text-sm font-medium">Detalles Técnicos</p>
+                            </a>
+                        </nav>
+                        <div
+                            class="p-5 rounded-xl bg-slate-100 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800">
+                            <h4 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3">Metadatos del
+                                Proyecto</h4>
+                            <div class="flex flex-col gap-3">
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-500">Cronograma</span>
+                                    <span class="text-slate-900 dark:text-slate-200">4 Meses</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-500">Rol</span>
+                                    <span class="text-slate-900 dark:text-slate-200">Arquitecto Principal</span>
+                                </div>
+                                <div class="flex justify-between text-sm">
+                                    <span class="text-slate-500">Industria</span>
+                                    <span class="text-slate-900 dark:text-slate-200">Infraestructura</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <div class="flex-1 flex flex-col gap-16">
+                    <section id="challenge">
+                        <div class="flex items-center gap-2 text-primary mb-4">
+                            <span class="material-symbols-outlined">error_outline</span>
+                            <span class="font-bold text-sm uppercase tracking-widest">Contexto</span>
+                        </div>
+                        <h2
+                            class="text-slate-900 dark:text-white text-3xl font-extrabold leading-tight tracking-tight mb-6 font-display">
+                            El Desafío</h2>
+                        <div class="prose prose-slate dark:prose-invert max-w-none">
+                            <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-4">
+                                La mayoría de los ejecutores de tareas tienen dificultades para escalar horizontalmente.
+                                El desafío principal fue construir un sistema que pudiera manejar miles de tareas
+                                concurrentes de larga duración sin un solo punto de falla.
+                            </p>
+                            <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                                Las soluciones internas anteriores sufrían de condiciones de carrera frecuentes durante
+                                el reequilibrio de trabajadores y alta latencia al distribuir trabajos en múltiples
+                                zonas de disponibilidad. Necesitábamos una arquitectura sin líder que pudiera mantener
+                                una consistencia fuerte asegurando una disponibilidad del 99.99%.
+                            </p>
+                        </div>
+                    </section>
+                    <section
+                        class="p-8 rounded-2xl bg-slate-100 dark:bg-slate-800/30 border border-slate-200 dark:border-slate-800"
+                        id="solution">
+                        <div class="flex items-center gap-2 text-emerald-500 mb-4">
+                            <span class="material-symbols-outlined">verified</span>
+                            <span class="font-bold text-sm uppercase tracking-widest">Arquitectura</span>
+                        </div>
+                        <h2
+                            class="text-slate-900 dark:text-white text-3xl font-extrabold leading-tight tracking-tight mb-6 font-display">
+                            La Solución</h2>
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                            <div class="flex flex-col gap-4">
+                                <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed">
+                                    Implementamos un protocolo de chismes (gossip protocol) entre pares para la
+                                    sincronización de estados. Al utilizar una tabla de hash distribuida (DHT), Nebula
+                                    distribuye las cargas de trabajo de manera uniforme en el clúster sin un nodo
+                                    maestro central.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span class="text-slate-700 dark:text-slate-300">Nodos de trabajo con capacidad
+                                            de recuperación automática mediante controles de salud.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span class="text-slate-700 dark:text-slate-300">Escalado dinámico basado en la
+                                            profundidad de la cola y la presión de la CPU.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                        <span class="text-slate-700 dark:text-slate-300">Replicación multi-región con
+                                            tipos de datos replicados libres de conflictos (CRDTs).</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div
+                                class="rounded-xl bg-background-dark p-2 border border-slate-700 overflow-hidden shadow-2xl">
+                                <img alt="Diagrama de arquitectura del sistema con nodos y flechas"
+                                    class="rounded-lg w-full h-auto opacity-80 hover:opacity-100 transition-opacity"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBY-cE9pNEC1CozgeRs2l8tNadf_Mpim1xnoEU4C9Y5YIHDpFqAji5qhLvAI0tSxF9F_gCX-oMZMYBNWkdXqSY5WmIQo8ZISvI1ZaIYFgkjhCJ9ZhUPl2-J0dXXCYWcS6YZHpBgqIwCrUkxAjgGftHnb-gPE6WqUWQdMpMl8jaGT5yQEaV9w39eGbva5gd3lsFKk0TfpHWIno7kDwa6fOHjeFHpRSxgocBxWkYzro30E4hjb5uStEd5WDnJ8DzNpDfzsnboM1ok-ZXu" />
+                            </div>
+                        </div>
+                    </section>
+                    <section id="stack">
+                        <h2
+                            class="text-slate-900 dark:text-white text-3xl font-extrabold leading-tight tracking-tight mb-8 font-display">
+                            Stack Tecnológico</h2>
+                        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+                            <div
+                                class="flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all group">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary mb-2 transition-colors">cloud</span>
+                                <span class="font-bold text-sm">Kubernetes</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all group">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary mb-2 transition-colors">database</span>
+                                <span class="font-bold text-sm">Redis OSS</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all group">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary mb-2 transition-colors">language</span>
+                                <span class="font-bold text-sm">Golang</span>
+                            </div>
+                            <div
+                                class="flex flex-col items-center justify-center p-6 rounded-xl bg-slate-50 dark:bg-slate-800/50 border border-slate-200 dark:border-slate-800 hover:border-primary transition-all group">
+                                <span
+                                    class="material-symbols-outlined text-4xl text-slate-400 group-hover:text-primary mb-2 transition-colors">monitoring</span>
+                                <span class="font-bold text-sm">Prometheus</span>
+                            </div>
+                        </div>
+                    </section>
+                    <section id="technical">
+                        <h2
+                            class="text-slate-900 dark:text-white text-3xl font-extrabold leading-tight tracking-tight mb-6 font-display">
+                            Profundización Técnica</h2>
+                        <p class="text-slate-700 dark:text-slate-300 text-lg leading-relaxed mb-6">
+                            A continuación se presenta la implementación de nuestra lógica de planificador de tareas
+                            personalizada que utiliza hash consistente para minimizar las reasignaciones durante la
+                            rotación de nodos.
+                        </p>
+                        <div class="code-block rounded-xl overflow-hidden shadow-xl">
+                            <div
+                                class="flex items-center justify-between px-4 py-2 bg-slate-900 border-b border-slate-800">
+                                <div class="flex gap-1.5">
+                                    <div class="size-3 rounded-full bg-red-500"></div>
+                                    <div class="size-3 rounded-full bg-amber-500"></div>
+                                    <div class="size-3 rounded-full bg-emerald-500"></div>
+                                </div>
+                                <span class="text-xs text-slate-500 font-mono">scheduler.go</span>
+                            </div>
+                            <div class="p-6 font-mono text-sm overflow-x-auto text-slate-300">
+                                <pre><code><span class="text-primary">func</span> (s *Scheduler) <span class="text-emerald-400">AssignTask</span>(taskID string) (string, error) {
+    <span class="text-slate-500">// Buscar el nodo óptimo usando hash consistente</span>
+    node, err := s.ring.<span class="text-emerald-400">GetNode</span>(taskID)
+    <span class="text-primary">if</span> err != nil {
+        <span class="text-primary">return</span> <span class="text-amber-300">""</span>, err
+    }
+    <span class="text-slate-500">// Verificación atómica check-and-set para propiedad del trabajo</span>
+    success, err := s.kv.<span class="text-emerald-400">SetNX</span>(ctx, <span class="text-amber-300">"lock:"</span>+taskID, node.ID, time.Second*30)
+    <span class="text-primary">if</span> !success || err != nil {
+        <span class="text-primary">return</span> <span class="text-amber-300">""</span>, ErrTaskAlreadyClaimed
+    }
+    <span class="text-primary">return</span> node.Address, nil
+}</code></pre>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </main>
+            <footer
+                class="w-full bg-slate-100 dark:bg-slate-900/50 border-t border-slate-200 dark:border-slate-800 py-20 px-4 mt-20">
+                <div class="max-w-[1200px] mx-auto text-center">
+                    <p class="text-primary font-bold uppercase tracking-widest text-sm mb-4">Siguiente Proyecto</p>
+                    <h3
+                        class="text-3xl md:text-5xl font-black text-slate-900 dark:text-white mb-8 hover:text-primary transition-colors cursor-pointer font-display">
+                        Quantum: Motor de Analítica en Tiempo Real →
+                    </h3>
+                    <div class="flex justify-center gap-6">
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#">LinkedIn</a>
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#">GitHub</a>
+                        <a class="text-slate-500 hover:text-white transition-colors" href="#">Twitter</a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+</body>
+
+</html>
